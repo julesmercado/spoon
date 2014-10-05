@@ -1,0 +1,30 @@
+<section>
+	<ul ng-init='tab=1'>
+		<li> <a href="" ng-click="setTab(1)" ng-class='{active: tab===1}'>Customer Details</a></li>
+		<li> <a href="" ng-click="setTab(2)" ng-class='{active: tab===2}'>Booking Details</a></li>
+		<li> <a href="" ng-click="setTab(3)" ng-class='{active: tab===3}'>Review</a></li>
+	</ul>
+	<section class="panel" ng-show='tab===1'>
+
+		<label>Customer/Company Name</label> <input type="text" placeholder="To appear in official receipt"><br>
+		<label>Contact Person</label> <input type="text" placeholder="Complete Name"><br>
+		<label>Mobile No.</label> <input type="text" placeholder="Globe, Sun, TM"><br>
+		<label>Customer Card No.</label> <input type="text" placeholder="Optional"><br>
+		<label>Discount Certificate No.</label> <input type="text" placeholder="Optional"><br>
+
+	</section>
+
+	<section class="panel" ng-show='tab===2'>
+
+		<label>No. of PAX</label> <input type="text" placeholder="To appear in official receipt"><br>
+		<label>Serving Date</label> <input type="text" placeholder="Complete Name"><br>
+		<label>Serving Time</label> <input type="text" placeholder="Globe, Sun, TM"><br>
+		<label>Complete Address</label> <input type="text" placeholder="Optional"><br>
+		<label>Discount Certificate No.</label> <input type="text" placeholder="Optional"><br>
+
+	</section>
+
+	<section class="panel" ng-show='tab===3'>
+		Review
+	</section>
+</section>

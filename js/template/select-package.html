@@ -1,0 +1,13 @@
+<section>
+	<section ng-repeat="select in data | orderBy:select.id:true" ng-click="selectPackage( select )"> 
+        <section><img ng-src="select.image[	]" alt="Mountain View" style="width:30px;height:30px"></section>
+        {{select.name}}
+        <p>{{select.description}}</p>
+        <img ng-src="select.image[1]" alt="Mountain View" style="width:30px;height:30px">
+        <hr>
+    </section>
+	<section select-package-plan></section>
+</section>
+      
+      
+      
